@@ -13,7 +13,7 @@ namespace Asp_mvc_2.Models.EntityManager
             using (DemoDBEntities db = new DemoDBEntities())
             {
 
-                SYSUser SU = new SYSUser();
+                SYSUser SU = new SYSUser(); 
                 SU.LoginName = user.LoginName;
                 SU.PasswordEncryptedText = user.Password;
                 SU.RowCreatedSYSUserID = user.SYSUserID > 0 ? user.SYSUserID : 1;
